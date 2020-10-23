@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<!-- Site made with Mobirise Website Builder v4.12.4, https://mobirise.com -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="generator" content="Mobirise v4.12.4, mobirise.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<link rel="shortcut icon" href="/assets/images/logo-white-1-122x122.png" type="image/x-icon">
+	<meta name="description" content="Web Page Creator Description">
+
+
+	<title>Post A</title>
+	<link rel="stylesheet" href="/assets/web//assets/mobirise-icons/mobirise-icons.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="/assets/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="/assets/facebook-plugin/style.css">
+	<link rel="stylesheet" href="/assets/tether/tether.min.css">
+	<link rel="stylesheet" href="/assets/dropdown/css/style.css">
+	<link rel="stylesheet" href="/assets/theme/css/style.css">
+	<link rel="preload" as="style" href="/assets/mobirise/css/mbr-additional.css">
+	<link rel="stylesheet" href="/assets/mobirise/css/mbr-additional.css" type="text/css">
+
+	<!--<script defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUPXXeCmnYkvYxqfFwerXjnZvn1nHkVbc&callback=initMap">
+	</script>-->
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUPXXeCmnYkvYxqfFwerXjnZvn1nHkVbc&callback=initMap&libraries=&v=weekly"
+			defer></script>-->
+
+	
+</head>
+
+
+<body>
+
+	<div id="main">
+
+		<section class="menu cid-s9y0tnZUwH" once="menu" id="menu1-34">
+
+
+
+			<nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</button>
+				<div class="menu-logo">
+					<div class="navbar-brand">
+						<span class="navbar-logo">
+							<a href="/index">
+								<img src="/assets/images/logo-white-1-122x122.png" alt="Mobirise" title="" style="height: 3.8rem;">
+							</a>
+						</span>
+						<span class="navbar-caption-wrap">
+							<a class="navbar-caption text-white display-4" href="/index">
+								Scuba Diving Journal
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+						<li class="nav-item">
+							<h4 class="nav-link link text-white display-4" @click="logout">log out</h4>
+							<!-- <a class="nav-link link text-white display-4" href="https://mobirise.co">
+			</a> -->
+						</li>
+					</ul>
+
+				</div>
+			</nav>
+		</section>
+
+		<section class="engine"><a href="https://mobirise.info/z">best css templates</a></section>
+		<section class="extHeader cid-s9xHRQXgRN" id="extHeader26-2v">
+
+
+			<div class="back"></div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 m-auto">
+						<!-- <img src="/assets/images/06-1258x839.jpg" alt="Mobirise" title=""> -->
+						<img :src=info.url alt="Mobirise" title="">
+					</div>
+					<div class="col-lg-6 m-auto">
+						<div class="content-wrapper align-left">
+
+							<h1 class="mbr-section-title mbr-semibold mbr-black pb-4 mbr-fonts-style display-1">{{info.title}}</h1>
+							<h4 class="mbr-section-subtitle mbr-regular mbr-black pb-2 mbr-fonts-style display-4">
+								<strong>MY DIVING JOURNAL</strong>&nbsp;/
+								{{info.number}}
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mbr-section content8 cid-s6c7qTFNv5" id="content8-12">
+
+
+
+			<div class="container">
+				<div class="media-container-row title">
+					<div class="col-12 col-md-8">
+						<div class="mbr-section-btn align-center">
+							<a class="btn btn-primary display-4" @click="editP()">
+								&nbsp; &nbsp;
+								&nbsp; &nbsp; &nbsp; &nbsp;Edit &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+							</a>
+							<a class="btn btn-secondary-outline display-4" href="/abme">Back to My Page</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="mbr-section article content12 cid-s67sIW1Yp6" id="content12-t">
+
+
+			<div class="container">
+				<div class="media-container-row">
+
+					<div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+						<ul>
+							<li><strong>Dive No: </strong>{{info.number}}</li>
+							<li><strong>Date: </strong>{{info.date}}</li>
+							<li><strong>Location:&nbsp;</strong>&nbsp;{{info.location}}</li>
+							<li><strong>Visibility</strong>: {{info.meters}}m&nbsp;</li>
+							<li><strong>Carried Weight:</strong> {{info.kg}}kg</li>
+							<li><strong>Title: </strong>{{info.title}}</li>
+							<li><strong>Comments: </strong>{{info.message}}</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="map1 cid-s9xASjBBAY" id="map1-2f">
+
+			<div class="google-map" id="google-map">
+
+
+				<!-- <iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15665687.999603797!2d138.60961867004298!3d-16.544723430008627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x697a806a48e2f0f3%3A0x59638f8ec789a800!2sCoastal%20Waters%20Of%20Great%20Barrier%20Reefs!5e0!3m2!1szh-TW!2shk!4v1599151705405!5m2!1szh-TW!2shk"
+				allowfullscreen=""></iframe> -->
+			</div>
+		</section>
+
+		<section once="footers" class="cid-s9xyLFBeOH" id="footer6-28">
+			<div class="container">
+				<div class="media-container-row align-center mbr-white">
+					<div class="col-12">
+						<p class="mbr-text mb-0 mbr-fonts-style display-7">© 197370439 - PT11 - CTYN</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+
+	
+
+
+	<script src="/assets/web//assets/jquery/jquery.min.js"></script>
+
+	<script src="/assets/popper/popper.min.js"></script>
+	<!-- <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5"></script>
+	<script src="https://apis.google.com/js/plusone.js"></script>      
+	<script src="/assets/facebook-plugin/facebook-script.js"></script>
+	<script src="/assets/tether/tether.min.js"></script>
+	<script src="/assets/smoothscroll/smooth-scroll.js"></script>
+	<script src="/assets/dropdown/js/nav-dropdown.js"></script>
+	<script src="/assets/dropdown/js/navbar-dropdown.js"></script>
+	<script src="/assets/touchswipe/jquery.touch-swipe.min.js"></script>
+	<script src="/assets/theme/js/script.js"></script> -->
+
+	<script src="/assets/js/vue.js"></script>
+	<script src="/assets/js/postA.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false" charset="utf-8"></script>    <!--The map api-->
+
+	<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initGoogleMap"></script>-->
+
+</body>
+</html>
+

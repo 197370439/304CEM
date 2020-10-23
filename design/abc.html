@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $.get("http://api.openweathermap.org/data/2.5/weather?q=hong%20kong&appid=a7165177d8e0b98b419fc8e0ad9ac76a", function(data, status){
+   
+ var myJSON = JSON.stringify(data);
+   var obj = JSON.parse(myJSON);
+   var feelsLikeInC = (obj.main.feels_like-273.15).toFixed(1);
+      var tempInC = (obj.main.temp-273.15).toFixed(1);
+	var sunsetVal = obj.sys.sunset;
+	var sunsetDate = new Date(sunsetVal*1000).getHours();
+	var sunriseVal = obj.sys.sunrise;
+	var sunriseDate = new Date(sunriseVal*1000).getHours();
+	var sunsetDateMin = new Date(sunsetVal*1000). getMinutes();
+	var sunriseDateMin = new Date(sunriseVal*1000). getMinutes();  
+   $("#sunrise").empty();
+     $("#sunset").empty();
+	    $("#temp").empty();
+     $("#feels_like").empty();
+	 $("#humidity").empty();
+	$("#sunrise").append("sunrise: 0"+sunriseDate+":"+sunriseDateMin)
+	$("#sunset").append("sunset: "+sunsetDate+":"+sunsetDateMin)
+		$("#temp").append("temp: "+tempInC+"C")
+	$("#feels_like").append("feels_like: "+feelsLikeInC+"C")
+		$("#humidity").append("humidity: "+obj.main.humidity)
+  });
+});
+</script>
+</head>
+<body>
+
+
+<p id="sunrise">abc</p>
+<p id="sunset">abc</p>
+<p id="temp">abc</p>
+<p id="feels_like">abc</p>
+<p id="humidity">abc</p>
+</body>
+</html>
